@@ -1,0 +1,745 @@
+@font-face {font-family: 'Museo Slab';src: url('/templates/rebekahtwo/fonts/27728C_0_0.eot');src: url('/templates/rebekahtwo/fonts/27728C_0_0.eot?#iefix') format('embedded-opentype'),url('/templates/rebekahtwo/fonts/27728C_0_0.woff') format('woff'),url('/templates/rebekahtwo/fonts/27728C_0_0.ttf') format('truetype');}
+@font-face {font-family: 'Museo Sans';src: url('/templates/rebekahtwo/fonts/2773E7_0_0.eot');src: url('/templates/rebekahtwo/fonts/2773E7_0_0.eot?#iefix') format('embedded-opentype'),url('/templates/rebekahtwo/fonts/2773E7_0_0.woff') format('woff'),url('/templates/rebekahtwo/fonts/2773E7_0_0.ttf') format('truetype');}
+@font-face {
+    font-family: Museo300;
+    src: url('/templates/rebekahtwo/fonts/Museo300-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: Museo500;
+    src: url('/templates/rebekahtwo/fonts/Museo500-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: Museo700;
+    src: url('/templates/rebekahtwo/fonts/Museo700-Regular.otf') format('opentype');
+}
+
+/* -----------------------------------------
+   Foundation Resets
+----------------------------------------- */
+
+.row {
+	max-width: 940px;
+}
+.tab-bar {
+	background: #1b6778;
+}
+.tab-bar .left-small {
+	border-right: 1px solid #afe1e8;
+}
+.tab-bar h1 {
+	font-family: "Museo300";
+}
+.left-off-canvas-menu {
+	background: #1b6778;
+}
+ul.off-canvas-list li a {
+	color: rgba(255,255,255,0.85);
+	border-bottom: 1px solid #0e5564;
+}
+    ul.off-canvas-list li a:hover {
+      background: #0f819b; }
+ul.off-canvas-list li ul {
+	margin-left: 0.75rem;
+}
+ul.off-canvas-list li ul li {
+	list-style-type: none;
+}
+	
+.top-bar {
+	background: #0f819b;
+	border-bottom: 1px solid #1b6778;
+}
+.top-bar.expanded .title-area {
+	background: #0f819b;
+}
+.expanded.top-bar .toggle-topbar a {
+	color: #fff;
+}
+.top-bar .name h1 a {
+	padding-right: 2px;
+}
+.top-bar-section ul {
+	padding-bottom: 0.93rem;	
+	background: #0f819b;
+}
+.top-bar-section ul li {
+	padding: 1px 0.93rem;
+	background: #0f819b;
+}
+.top-bar-section ul li:not(.has-form):hover > a {
+	background: #1b6778;
+}
+.top-bar-section ul li > a {
+	font-family: "Museo Sans";
+	font-weight: bold;
+	text-transform: uppercase;
+	background: #2a8ea5;
+}
+
+fieldset legend {
+	background: none;
+}
+.breadcrumbs {
+	background: none;
+	border: none;
+	padding: 5px;	
+	margin-bottom: 15px;
+}
+.breadcrumbs>* a {
+	color: #0f819b;
+}
+button, .button {
+	font-family: "Museo Sans";
+}
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+body {
+	font-family: font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	color: #002e48;
+    background-color: #005f95;
+}
+
+a {
+	color: #002e48;
+}
+	a:hover {
+		color: ##005f95;
+	}
+
+h1 { font-family: "Museo700", museo-slab, Museo, Rockwell, serif; color: #0f819b; }    
+h2 { font-family: "Museo500", museo-slab, Museo, Rockwell, serif; color: #; }    
+h3, h4, h5, h6 { font-family: "Museo300", museo-slab, Museo, Rockwell, serif; color: #0f819b; }    
+h1 small, h2 small, h3 small, h4 small, h5 small { font-weight: normal; }
+hgroup {
+    padding: 0px;
+    margin: 5px 0px 30px 0px;
+}
+    hgroup h1, hgroup h2, hgroup h3, hgroup h4, hgroup h5, hgroup h6 {
+        margin: 0px;
+        padding: 0px;
+        line-height: 1;
+    }
+.top-bar .name h1 { font-family: "Museo300"; }
+
+#one-column-emphasis{font-family:"Lucida Sans Unicode", "Lucida Grande", Sans-Serif;font-size:12px;width:480px;text-align:left;border-collapse:collapse;margin:20px;}
+#one-column-emphasis th{font-size:14px;font-weight:normal;color:#039;padding:12px 15px;}
+#one-column-emphasis td{color:#005f95;border-top:1px solid #e8edff;padding:10px 15px;}.oce-first{background:#c0bbb5;border-right:10px solid transparent;border-left:10px solid transparent;}
+#one-column-emphasis tr:hover td{color:##005f95;background:#eff2ff;}
+    
+
+
+p.intro {
+    font-size: 18px;
+    line-height: 1.3;
+    color: #333;
+}
+
+hr.dashed { height: 2px; background: transparent url(/templates/rebekahtwo/images/hrstitch.png) 0 0 repeat-x; border: none; }
+hr.dashed { background: transparent url(/templates/rebekahtwo/images/hrstitch.svg) 0 0 repeat-x; }
+hr.dashed.light { background: transparent url(/templates/rebekahtwo/images/hrstitch-light.png) 0 0 repeat-x; }
+hr.dashed.light { background: transparent url(/templates/rebekahtwo/images/hrstitch-light.svg) 0 0 repeat-x; }
+
+.panel {
+    background: #0e505f;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+    .panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6 {
+	    font-weight: bold;
+        color: #fff;
+    }
+	.panel p {
+		color: #eee;
+	}
+	.panel .button { background-color: #f7941d; color: #fff; }
+	.panel .button:hover { background-color: #d07a12; color: #fff; }
+
+img.fancy { border: 10px solid #dcf2f5; }
+	
+.grey-teal.button       { background-color: #99c9d0; color: #fff; }
+.orange.button			{ background-color: #f7941d; color: #fff; }
+.red.button				{ background-color: #d94301; }
+	
+.grey-teal.button:hover { background-color: #7eaeb5; color: #fff; }
+.orange.button:hover 	{ background-color: #d07a12; color: #fff; }
+.red.button:hover {
+    background-color: #ea5d1e;
+    color: #fff;
+}
+	
+.flat.button {
+    border: 0px;
+    text-shadow: none;
+    font-weight: bold;
+}
+
+.label a { color: #eee; }
+.label a:hover { color: #fff; }
+
+
+blockquote { font-family: "Museo300"; font-style: italic; background: url(/templates/rebekahtwo/images/quote.png) 0 0 no-repeat; margin: 0 0 18px; padding: 9px 20px 0 19px; border: 0px; color: #555; }
+
+#rcaLogo { display:none; }
+
+/* -----------------------------------------
+   Header and Footer
+----------------------------------------- */
+
+	header { background-color: #002e48; padding-bottom: 10px; padding-top: 20px; }
+	body.home.ff header { margin-top: 20px; }
+	body.ff header { margin-top:-30px }
+	header nav { margin-top: 51px; }
+	header nav ul { text-transform: uppercase; margin: 0 0 0 -20px; padding: 0; float: right; overflow: hidden; }
+	header nav ul li { margin: 0 0 0 30px; padding: 0; display: block; float: left; position: relative; }
+	header nav ul li:after { content: ""; display: block; width: 4px; height: 4px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; background: #6bb3c2; position: absolute; top: 9px; right: -17px; }
+	header nav ul li a { font-size: 14px; font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif; color: #fff; }
+	header nav ul li a:hover { color: #bae5eb; }
+	header nav ul li a > span { color: #6bb3c2; margin-right: 2px; }
+	header nav #activeSprite { position: absolute; width: 21px; height: 12px; background: url(/templates/rebekahtwo/images/active-nav.png) 0 0 no-repeat; display: block; }
+	
+	header nav ul.show-on-mobile { display:none }
+    
+@media only screen and (min-width: 40.063em) {
+	div.no-featured { padding-top: 30px; }
+}
+	.contentDividerFrame { background-color: #002e48; }
+    /*#contentDivider { position: relative; height: 44px; margin: -20px 0px 0 0px; background: transparent url(/templates/rebekahtwo/images/home-divider.png) center 0 repeat-x; }*/
+    #contentDivider { position: relative; height: 44px; margin: 10px 0px 0 0px; top:10px;  background: transparent url(/static/img/topstitch.svg) center 0 repeat-x; transform: rotate(-.5deg); }
+    .no-svg #contentDivider { position: relative; height: 44px; margin: 10px 0px 0 0px; top:10px; background: transparent url(/static/img/topstitch.png) center 0 repeat-x; transform: rotate(-.5deg); }
+
+article {
+	padding-top: 10px;
+	padding-bottom: 30px;
+    background-color: #c0bbb5;
+}
+	article a {
+		font-weight: bold;
+	}
+	article .downloads a {
+		font-weight: normal;
+	}
+	article h1 a, article h2 a, article h3 a, article .breadcrumbs a {
+		font-weight: normal;
+	}
+	article .row.service {
+		border-top: 1px solid #bbb;
+		padding: 30px 0px;
+	}
+
+	ul.pagination li.current a {
+		background: #0f819b;	
+	}
+		ul.pagination li.current a:hover, ul.pagination li.current a:focus {
+			background: #0f819b;	
+		}
+	ul.pagination li a, ul.pagination li.unavailable a {
+		color: #666;
+	}
+	
+	/*footer { padding: 40px 0 20px 0; background: #56b0c3 url(/templates/rebekahtwo/images/footer.png) center 0 repeat-x; margin-top: 0px; font-family: "Museo Sans", sans-serif; }*/
+	/*footer { padding: 60px 0 20px 0; background: #56b0c3 url(/templates/rebekahtwo/images/bottomstitch.svg) center 0 repeat-x; margin-top: 0px; font-family: "Museo Sans", sans-serif; }
+	.no-svg footer { background: #56b0c3 url(/templates/rebekahtwo/images/bottomstitch.png) center 0 repeat-x; }*/
+	
+    footer { padding: 0 0 20px 0; margin-top: 0px; font-family: "Museo Sans", sans-serif; }
+	footer .stitch { position: relative; background: transparent url(/static/img/bottomstitch.svg) center 0 repeat-x; height: 40px; margin: 0px; padding: 0px; z-index: 1000; }
+    .no-svg footer .stitch { background: transparent url(/static/img/bottomstitch.png) center 0 repeat-x; }
+    footer .social { margin-top: 0px; padding: 0px; }
+        footer .social .inline-list { position: relative; margin: -15px 15px 15px 0; padding:  0px; z-index: 100; }
+            footer .social .inline-list>li { background: transparent url(/templates/rebekahtwo/images/socialtab.svg) center bottom no-repeat; padding: 10px 3px 2px; margin-left: 0px; width: 48px; text-align: center; color: #fff; font-size: 1.75em; bottom: 10px; transform: rotate(.5deg); }
+            .no-svg footer .social .inline-list>li { background: transparent url(/templates/rebekahtwo/images/socialtab.png) center bottom no-repeat; }
+                footer .social .inline-list>li a { color: #fff; }
+	
+	footer p, footer h5, footer a { color: #fff; }
+	footer a:hover, footer a:visited { color: #fff; }
+	footer h5 { font-family: "Museo500", Museo, Rockwell, serif; margin-bottom: 10px; font-size: 17px; }
+	footer a:hover { color: #fff; text-decoration: underline; }
+
+	footer .blue.button { color: #12819a; font-size: 15px; background: #b1e2e9; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+
+        footer .inline-list {
+            float: right;
+        }
+
+/* -----------------------------------------
+   Blog
+----------------------------------------- */
+	
+dl.article-info {
+	padding: 15px 10px 45px 0px;
+	border-right: 1px solid #bbb;
+}
+	dl.article-info dd {
+		text-align: right;
+	}
+	
+.fb_iframe_widget {
+	line-height: 100%;
+}
+
+.blog-item img {
+	margin-bottom: 20px;	
+	border: 10px solid #dcf2f5;
+}
+
+.inline-list.social a {
+    font-size: 1.5em;
+}
+	
+/* -----------------------------------------
+   Event
+----------------------------------------- */
+	
+/* From Old Site
+	
+	.event_location { height:110px; margin: 0 auto; width: 360px; display: block;	}
+	.cta { margin: 30px 0; text-align: center; }
+	.date { margin: 0 auto; width: 100px; padding: 0; background: #003d43; text-align: center; margin-bottom: 30px; }
+	.date span { display: block; text-align: center; margin-bottom: 6px; }
+	.date strong { font-size: 30px; }
+	.date .month { color: #fff; border-bottom: 1px solid #336f76; }
+	.date .day { color: #fff; font-size: 60px; line-height: 60px; padding: 15px 0px; }
+	.date .time { background: #336f76; color: #ffffff; padding: 3px 0px; }
+	address, .address { text-align: center; padding: 0; }
+	.invitation img { -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; align: center; }
+	.cta:before { content: ""; display: block; width: 200px; height: 7px; background: url(/templates/rebekahtwo/images/ornament-divider.png) 0 0 no-repeat; position: absolute; top: 48px; left: 0; }
+	.cta:after { content: ""; width: 200px; height: 7px; background: url(/templates/rebekahtwo/images/ornament-divider2.png) center right no-repeat; position: absolute; top: 48px; right: 0; float: left; }
+	.invitation h3,.invitation h4  {text-align: center;}
+	.invitation h3 {
+		font-size: 5em;
+		margin: 0;
+		padding: 0;
+	}
+	.invitation h3.subtext {
+		font-size: 1.5em;
+		text-transform: uppercase;
+	}
+	.invitation h4 {
+		margin: 25px 0px;
+	}
+	.cta h4 {
+		margin: 0px;
+	}
+	.cta h4.subtext {
+		color: #777777;
+	}
+	
+	.invitation .panel h4 {
+		color: #dddddd;
+	}
+	
+	a.map { display: block; }
+	
+	.alert-header { color: #ffffff; text-align: center; margin: 5px; }
+	.alert-subheader { color: #999999; text-align: center; }
+	.alert-message { color: #ffffff; margin: 7px; }
+	.alert-message a { color: #eeeeee; }
+	.alert { background: #111111; } */
+	
+/* -----------------------------------------
+   Volunteer
+----------------------------------------- */
+	/* img.fix-spacing { display: block; margin-top: -5px; margin-bottom: 35px;  } */
+
+/* -----------------------------------------
+   About
+----------------------------------------- */
+
+/*	.four.columns.twitter { background: url(/templates/rebekahtwo/images/assets/twitter.png) no-repeat 0 0; margin: 0; padding-left: 80px }
+	.four.columns.facebook { background: url(/templates/rebekahtwo/images/assets/facebook.png) no-repeat 20px 0; margin: 0; padding-left: 80px }
+	span.label { font-family: Helvetica; background: #999; padding: 2px 4px 1px; color: white; font-size: 11px; font-weight: bold; text-transform: uppercase; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; position: relative; bottom: 2px; text-underline: none }
+	a span.label:hover { background: #7b7b7b; } */
+	
+/* -----------------------------------------
+   Programs
+----------------------------------------- */
+
+.category-desc img {
+	display: none;
+}
+
+/* -----------------------------------------
+   Get Involved
+----------------------------------------- */
+/* .get-involved-sidebar h4 { background: url(/templates/rebekahtwo/images/icons/fancy-bullet.png) 0 1px no-repeat; padding-left: 30px; font-size: 18px; font-size: 1.8rem; }
+.get-involved-sidebar h4.last { margin-top: 28px; }
+.get-involved-sidebar h4+p { font-size: 16px; font-size: 1.6rem; margin-bottom: 12px; }
+
+.kids-helped { margin-top: 40px; margin-bottom: 40px; position: relative; text-align: center; font-size: 32px; font-size: 3.2rem; color: #0e505f; font-style: italic; }
+.kids-helped:before { content: ""; display: block; width: 287px; height: 7px; background: url(/templates/rebekahtwo/images/ornament-divider2.png) 0 0 no-repeat; position: absolute; top: 6px; left: 0; }
+.kids-helped:after { content: ""; display: block; width: 287px; height: 7px; background: url(/templates/rebekahtwo/images/ornament-divider.png) 0 0 no-repeat; position: absolute; top: 6px; right: 0; }
+
+.make-difference h4 { margin-bottom: 18px; }
+.make-difference img { margin-top: 5px; float: left; margin-right: 16px; }
+.make-difference p { line-height: 24px; font-size: 15px; font-size: 1.5rem; }
+
+.blog-content .date { font-size: 15px; background: transparent; padding: 0; margin-top: 3px; color: #619ea7; }
+h1 a:hover { text-decoration: none; }
+.blog-content h2 { margin-top: 0; margin-bottom: 8px; line-height: 32px; }
+.blog-content h2 a:hover { text-decoration: none; color: #468088; }
+.blog-content small { display: block; font-size: 16px; margin-bottom: 30px; }
+.blog-content img { margin-bottom: 20px; margin-bottom: 20px; }
+.blog-content #dvHeadline { font-size: 16px; line-height: 22px; margin-bottom: 10px; }
+
+ul.like-buttons { margin-bottom: 0; padding: 10px 10px 0 10px; overflow: hidden; clear: both; background: #98c6cd; }
+ul.like-buttons li { float: left; background: transparent; }
+ul.social-media { background: transparent; margin-top: -4px; }
+div.panel input { width: 100%; height: 20px;} */
+
+
+/* -----------------------------------------
+   Homepage
+----------------------------------------- */
+
+body.home .row.bottom { display: none; }
+    
+	.jumbotron.row .column, .jumbotron.row .columns { padding-left: 0px; padding-right: 0px; }
+	
+	.jumbotron { position: relative;  }
+	.jumbotron h1 { position: absolute; left: 20px; bottom: 20px; }
+@media only screen and (min-width: 40.063em) {
+	.jumbotron img { -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+}
+	.jumbotron .lemon { background: url(/static/img/29th.png) center center no-repeat; padding-top: 62px; margin-top: 80px; width: 312px; height: 229px; text-align: center; }
+	.jumbotron .lemon h3 { font-size: 24px; color: white; text-shadow: none; line-height: 1.2; text-shadow: 2px 2px #FF0000;}
+	.jumbotron .lemon span { font-size: 16px; text-transform: lowercase; font-style: italic; color: #fff; font-family: "Museo Sans", sans-serif; text-shadow: 2px 2px #FF0000; }
+	.jumbotron .lemon .button { font-weight: normal; background-color: #c07423; color: #fff; font-size: 16px; text-transform: lowercase; font-style: italic; color: #fff; font-family: "Museo Sans", "Helvetica Neue", Helvetica, arial, sans-serif; padding: 8px 16px; -webkit-border-radius: 5px; border-radius: 5px; }
+	
+	.homepage .content { position: absolute; left: 70px; top: 0;  }
+	
+/*	.blog.panel { padding: 0; margin: 0; background: none; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; border: none; }
+	.blog.panel h3 { position: relative; top: 1px; float: left; margin-right: 20px; text-shadow: 0 1px 1px #fff; color: #003d43; }
+	.blog.panel a { color: inherit; }
+	.blog.panel p { margin-top: 2px; font-size: 16px; color: #005568; text-shadow: 0 1px 1px #fff; }
+	.blog.panel .button { margin-left: 15px; } */
+	
+/* -----------------------------------------
+   Culinary Academy
+----------------------------------------- */
+
+body.culinary { background: #d28e61; }
+
+.culinary .tab-bar { background: #aa2a1d; }
+.culinary .left-off-canvas-menu { background: #aa2a1d; }
+.culinary ul.off-canvas-list li a { border-bottom: 1px solid #999; }
+
+.culinary .jumbotron.row .column, .culinary .jumbotron.row .columns { padding-left: 0.9375rem; padding-right: 0.9375rem; }
+.culinary .jumbotron .custom { padding-top: 30px; }
+.culinary .jumbotron .custom img.bg { display: none; }
+body.culinary .content { position: absolute; left: 0; bottom: 0; width: 100%; background: rgba(255,255,255,0.85); }
+body.culinary .content p { width: 60%; padding: 20px; font-size: 15px; color: #555; margin: 0; }
+body.culinary .content .button { position: absolute; right: 20px; bottom: 20px; }
+body.culinary .jumbotron .content { background: none; position: static; }
+body.culinary .jumbotron .content h3 { color: #424242; font-family: "Museo500", serif; font-size: 34px; line-height: 1.3; width: 100%; }
+body.culinary .jumbotron .content p { font-size: 20px; font-family: "Museo500", serif; width: 100%; padding: 0 0 30px 0; }
+body.culinary .jumbotron .content .button { position: static; }
+
+body.culinary #contentDivider { height: 19px; margin: 0 -20px; background: url(/templates/rebekahtwo/images/culinary/scallop_edge.png) 0 0 repeat-x; }
+body.culinary article { padding-top: 20px; padding-bottom: 20px; background: #fbe4c0; }
+body.culinary article h1, .culinary article h2, .culinary article h3, .culinary article h4, .culinary article h5, .culinary article h6 { color: #aa2a1d; }
+body.culinary article a { color: #d94301; }
+	
+body.culinary .panel { background: #fff7ea; -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.1); -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.1); box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+body.culinary .panel, body.culinary .panel p { color: #424242; }
+body.culinary .panel h4 { color: #424242; }
+body.culinary .panel .button { background-color: #d94301; }
+body.culinary .panel .button:hover { background-color: #ea5d1e; }
+	
+body.culinary footer .stitch { background: transparent url(/templates/rebekahtwo/images/bottomstitch-cul.svg) center 0 repeat-x; }
+.no-svg body.culinary footer .stitch { background: transparent url(/templates/rebekahtwo/images/bottomstitch-cul.png) center 0 repeat-x; }
+body.culinary footer .grey-teal.button { background-color: #fbe4c0; color: #d28e61 !important; font-size: 15px; }
+body.culinary footer .grey-teal.button:hover { background-color: #fbeeda; }
+
+body.culinary header, body.culinary .contentDividerFrame { background: #fff url(/images/culinary/stripe.png) 0 0 repeat-x; }
+body.culinary nav a { color: #424242; }
+body.culinary header nav ul li:after { content: ""; width: 0; height: 0; }
+body.culinary header nav ul li a span { color: #bbb; }
+body.culinary header nav ul li a:hover,
+body.culinary header nav ul li.active a { color: #D94301; }
+	
+body.culinary .large.button { font-weight: normal; font-family: "Museo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+body.culinary img.fancy { border-color: #fdf2e0; }
+	
+body.culinary #mainLogo { display:none; }
+body.culinary #rcaLogo { display:block; }
+
+body.culinary .breadcrumbs { border-bottom: 1px dashed #424242; }
+body.culinary .breadcrumbs a { color: #aa2a1d; }
+
+
+/* -----------------------------------------
+   Festival of Trees Micro-Site
+----------------------------------------- */
+
+body.fot {
+    background: #191919;
+    color: #eee;
+}
+@media only screen and (min-width: 40.063em) {
+	body.fot { 
+    	background: #191919 url(/templates/rebekahtwo/images/fot/fot-back-2008-1312.jpg) center 0 no-repeat fixed; 
+    }
+}
+    body.fot .date-banner {
+        font: normal 18px "Museo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #eeeeee;
+        margin: 0px 0px 35px 0px;
+    }
+    body.fot #contentDivider { position: relative; height: 44px; margin: -20px 0px 0 0px; background: none; }
+    body.fot .content-frame {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    body.fot header, body.fot .contentDividerFrame {
+	    background: none;
+    }
+    body.fot article {
+        background: none;
+    }
+        body.fot article p {
+            color: #eeeeee;
+        }
+    body.fot .breadcrumbs a {
+        color: #ddd;
+    }
+    body.fot h1, body.fot h2, body.fot h3, body.fot h4, body.fot h5, body.fot h6 {
+        color: #ffffff;
+    }
+    body.fot ul.side-nav li {
+        font-family: "Museo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-align: right;
+    }
+        body.fot ul.side-nav li a {
+            color: #ffffff;
+        }
+
+    body.fot hr.dashed {
+        background: none;
+        height: 0px;
+        border-top: 1px dashed #999999;
+    }
+    body.fot footer {
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+/* -----------------------------------------
+    Adoption and Foster Care Promo Page
+------------------------------------------*/
+
+body.foster-care-month {
+    background: #cecf01;
+}
+    .foster-care-month p { color: #222; }
+    .foster-care-month a { color: #111; }
+
+    .foster-care-month .tab-bar { background: #d88010; }
+    .foster-care-month .left-off-canvas-menu { background: #d88010; }
+
+    .foster-care-month header { background: transparent url(/templates/rebekahtwo/images/transparent-bg-dark.svg) top center repeat; border-bottom: 1px dashed #888; }
+    .foster-care-month header nav ul li a { color: #fff; }
+    .foster-care-month .contentDividerFrame, .foster-care-month #contentDivider { background: none; }
+    
+    .foster-care-month article { background: none; }
+    .foster-care-month .item-pagefoster-care-month, .foster-care-month .moduletable { background: #f3eceb; padding: 1.25rem; border-radius: 0px; border: 1px solid #f3eceb; }
+    .foster-care-month .item-pagefoster-care-month p { color: #000; }
+    .foster-care-month footer { background: none; color: #111; }
+    .foster-care-month footer .stitch { background: transparent url(/templates/rebekahtwo/images/foster-care/bottomstitch-fc-ad.svg) bottom center repeat-x; }
+    .foster-care-month footer a { color: #111; }
+    .foster-care-month footer img { display: none; }
+    .foster-care-month footer img.hide { display: inline-block; }
+
+    .foster-care-month h1, .foster-care-month h2, .foster-care-month h3, .foster-care-month h4, .foster-care-month h5, .foster-care-month h6 { color: #111; }
+    .foster-care-month h1 a, .foster-care-month h2 a, .foster-care-month h3 a { color: #111; }
+    .foster-care-month .tab-bar h1 { color: #fff; }
+
+    .foster-care-month .jumbotron p.lead { font: 4em "Museo500"; text-align: center; color: #321; margin-top: 30px; 
+                                           /*background: transparent url(/templates/rebekahtwo/images/transparent-bg-dark.svg) top center repeat; border-radius: 15px;*/                                            
+    }
+
+    .foster-care-month .panel { padding: 0px; border-radius: 0px; border: 1px solid #f3eceb; }
+        .foster-care-month .panel.ad1 { background: #f3eceb; }
+        .foster-care-month .panel.ad2 { background: #f3eceb; }
+        .foster-care-month .panel.ad3 { background: #f3eceb; }
+        .foster-care-month .panel p { margin: 1.25rem; color: #000; }
+        .foster-care-month .panel .button { background: #d88010; }
+        .foster-care-month .panel .button:hover { background: #f3ad01; }
+
+    .foster-care-month footer hr.dashed { background: transparent url(/templates/rebekahtwo/images/hrstitch.svg) 0 0 repeat-x; }
+
+    .foster-care-month h6.social { color: #222; }
+    .foster-care-month ul.social li a { color: #111; }
+
+    .foster-care-month .grey-teal.button { background-color: #d88010; }
+    .foster-care-month .grey-teal.button:hover { background-color: #f3ad01; }
+
+
+/*@media only screen and (min-width: 40.063em) {*/
+    body.foster-care-month {
+        background: #cecf01 url(/templates/rebekahtwo/images/foster-care/foster-care-month-2015-back.jpg) top left no-repeat fixed;
+    }
+    .foster-care-month .jumbotron p.lead { color: #fff; }
+/*}*/
+
+
+/* -----------------------------------------
+   Ohanah Overrides
+----------------------------------------- */
+
+.container .moduletable {
+	width: 100%;
+	max-width: 940px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table.fc-header {
+	background-color: transparent;
+	border: none;
+}
+
+.ui-state-highlight {
+	border: 1px solid #aaaaaa;
+}
+
+.ohanah .event_detail_title h2 {
+	font-size: 2.3125rem;
+	line-height: 1.4;
+}
+
+.ohanah .event_detail_title h2 a {
+	color: #0f819b;
+}
+
+.ohanah-registration-link .button {
+	background-color: #f7941d;
+	color: #fff; 
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.ohanah-registration-link .button:hover {
+	background-color: #d07a12;
+}
+
+/* -----------------------------------------
+   Blackbaud Online Express Overrides
+----------------------------------------- */
+
+.BBFormSectionHeading label {
+	font-family: "Museo500";
+	color: #0f819b;
+	font-size: 1.6875rem;
+}
+
+#bboxdonation_BBEmbeddedForm .BBFormSectionHeading {
+	padding: 0px 5px;
+	margin: 5px 0px;
+}
+input#bboxevent_btnSubmit {
+	height: 45px;
+	background-color: #f7941d;
+	color: #fff;
+	border: 0px;
+	border-radius: 5px;
+	box-shadow: none;
+	padding: 8px 25px 10px 25px;
+}
+div.panel .BBFormContainer {
+	padding: 0;
+}
+
+div.panel .BBFormContainer .BBFormSubSectionHeading {
+	color: #ffffff;
+}
+.BBFormRadioLabel .BBFormRadioLabelGivingLevelSelected { /* FIX */
+    background: #a5d94d;
+}
+div.panel .BBFormContainer .BBFormSubmitbutton {
+	height: 45px;
+	background-color: #f7941d;
+	color: #fff;
+	border: 0px;
+	border-radius: 5px;
+	box-shadow: none;
+	padding: 8px 25px 10px 25px;
+}
+div.panel .BBFormContainer .BBFormSubmitbutton:hover {
+	background-color: #d07a12;
+}
+div.panel .BBFormContainer legend {
+	display: none;
+}
+div.panel .BBFormContainer input {
+	height: 28px;
+}
+
+/* -----------------------------------------
+   JSitemap Overrides
+----------------------------------------- */
+
+ul.jmap_filetree > li {
+	list-style: none;
+}
+
+/*ul.jmap_filetree li ul li {
+	list-style: disc;
+}*/
+
+ul.jmap_filetree li span.folder {
+	list-style: none;
+	font-family: Museo300;
+	font-size: 1.6875rem;
+}
+
+/* -----------------------------------------
+   JDownloads Overrides
+----------------------------------------- */
+
+table.download {
+	width: 100%;
+}
+div.moduletable-jDownloadsLatest {
+  margin: 0 0 15px 0;	
+}
+	div.moduletable-jDownloadsLatest div.moduletable-jDownloadsLatest {
+		margin: 0 0 0 5px;
+	}
+		div.moduletable-jDownloadsLatest div.moduletable-jDownloadsLatest div {
+			line-height: 1.1em;
+			margin: 0 0 7px 0;
+		}
+			div.moduletable-jDownloadsLatest div.moduletable-jDownloadsLatest div a {
+				font-weight: normal;
+			}
+.jd_footer {
+	background: none;
+	text-align: left;
+	font-size: 0.6em;
+}
+.back_button a {
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  background-color: #f7941d;
+  border-color: #d07a12;
+  color: white;
+  transition: background-color 300ms ease-out; }
+  .back_button a:hover, .back_button a:focus {
+    background-color: #d07a12;
+    color: white; 
+  }
